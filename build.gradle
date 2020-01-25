@@ -1,0 +1,39 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.8.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+	}
+}
+
+apply plugin: "idea"
+apply plugin: "java"
+apply plugin: "org.springframework.boot"
+
+group = 'com.jahs'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+bootRepackage {
+	enabled = false
+}
+
+springBoot {
+	mainClass = "com.jahs.Application"
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+	compile project(path: "order")
+	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+}
+
+

@@ -1,0 +1,3 @@
+rootProject.name = 'cqrs-ddd-event-orders'
+
+include 'order'

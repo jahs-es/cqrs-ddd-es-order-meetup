@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="cdeo.main" target="1.8" />
+      <module name="cdeo.orders.main" target="1.8" />
+      <module name="cdeo.orders.test" target="1.8" />
+      <module name="cdeo.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
